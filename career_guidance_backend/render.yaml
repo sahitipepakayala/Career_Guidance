@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: career-guidance-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn career_guidance_backend.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: career_guidance_backend.settings
+      - key: c6g5c^_f1s5m(g_&s#sfzb+zbe+ns#&subvhu5t#v*)8y#*^6t
+        value: replace-this-with-your-actual-secret-key
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: career-guidance-backend.onrender.com

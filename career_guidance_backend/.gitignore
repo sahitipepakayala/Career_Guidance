@@ -1,3 +1,33 @@
-*.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
 .env
+*.env
+
+# SQLite database
 db.sqlite3
+
+# Django static files collected by collectstatic
+/staticfiles/
+/staticfiles/*
+
+# Django media uploads (if any)
+/media/
+
+# VSCode settings (optional)
+/.vscode/
+
+# Python virtual environment folders
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+
+# IDE/editor files (optional)
+.idea/
+*.swp
